@@ -24,4 +24,16 @@ class Zalihe
 
         return $konekcija_baza->query($upit);
     }
+
+
+
+    public function vratiSveZalihe()
+    {
+        $konekcija_baza = new mysqli("localhost", "root", "", "zalihe");
+
+        $upit = "SELECT proizvod.naziv, proizvod.sifra, proizvod.opis, proizvod.cena, zalihe.merna_jedinica, zalihe.kolicina
+                FROM proizvod JOIN zalihe ON proizvod.id = zalihe.proizvod_id";
+
+        return $konekcija_baza->query($upit);
+    }
 }
