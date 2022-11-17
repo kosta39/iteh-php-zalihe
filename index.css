@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.index-naslov {
+    margin-top: 30px;
+    margin-left: 670px;
+}
+
+.div-index-izbor {
+    margin-top: 80px;
+    margin-left: 750px;
+}
+
+#novi-proizvod-dgm {
+    width: 500px;
+}
+
+#azuriraj-zalihe-dgm {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -500px;
+    width: 500px;
+}
