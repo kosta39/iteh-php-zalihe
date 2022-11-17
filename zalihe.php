@@ -13,18 +13,15 @@
 <body>
 
     <?php
-    include('MODAL/Modal.php');
+    include('MODAL/ModalZalihe.php');
     ?>
 
     <div class="div-index">
 
         <h1 class="index-naslov">PHP MYSQL AJAX - Domaći zadatak</h1>
 
-        <div class="div-index-izbor">
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novi-proizvod-modal" id="novi-proizvod-dgm">Unesi novi proizvod</button>
-            <a href="zalihe.php"><button class="btn btn-success btn-lg" id="azuriraj-zalihe-dgm">Pregled zaliha</button></a>
-        </div>
 
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#nova-zaliha-modal" id="nova-zaliha-dgm">Unesi nove zalihe</button>
 
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

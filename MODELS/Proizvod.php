@@ -27,4 +27,14 @@ class Proizvod
 
         return $konekcija_baza->query($upit);
     }
+
+
+    public function vratiSveProizvodeBaza()
+    {
+        $konekcija_baza = new mysqli("localhost", "root", "", "zalihe");
+
+        $upit = "SELECT * FROM proizvod";
+
+        return $konekcija_baza->query($upit);
+    }
 }
