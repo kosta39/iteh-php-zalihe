@@ -1,6 +1,7 @@
 $(function () {
     unosProizvoda();
     unosZalihe();
+    obrisiZalihe();
 });
 
 function unosProizvoda() {
@@ -54,6 +55,31 @@ function unosZalihe() {
 
                 success: function () {
                     alert('Nova zaliha je uspešno uneta u bazu podataka')
+                }
+            });
+    })
+}
+
+
+
+
+function obrisiZalihe() {
+
+    $(document).on('click', '#obrisi-zalihe-dgm', function () {
+
+        let zalihe_id = $(this).val()
+
+        $.ajax(
+            {
+                url: 'DB/obrisi-zalihe.php',
+                method: 'POST',
+                data: {
+                    zalihe_id: zalihe_id,
+                },
+
+                success: function () {
+                    alert('Zaliha je uspešno obrisana!')
+
                 }
             });
     })
