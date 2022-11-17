@@ -2,6 +2,7 @@ $(function () {
     unosProizvoda();
     unosZalihe();
     obrisiZalihe();
+    sortirajZalihe();
 });
 
 function unosProizvoda() {
@@ -83,4 +84,40 @@ function obrisiZalihe() {
                 }
             });
     })
+}
+
+
+
+function sortirajZalihe() {
+
+    $(document).on('click', 'th', function () {
+
+        let kolona_sort = $(this).attr('id')
+        let sort = $(this).attr('value')
+
+        if (kolona_sort == undefined || sort == undefined)
+            return;
+
+        $.ajax(
+            {
+                url: 'DB/sortiraj-zalihe.php',
+                method: 'POST',
+                data: {
+                    kolona_sort: kolona_sort,
+                    sort: sort
+                },
+
+                success: function (zalihe) {
+                    $('tbody').html(zalihe)
+                }
+            });
+
+        if (sort == 'desc') {
+            $(this).attr('value', 'asc')
+        } else {
+            $(this).attr('value', 'desc')
+        }
+    })
+
+
 }

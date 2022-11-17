@@ -28,12 +28,12 @@
         <table id="table-zalihe" class="table table-hover table-striped text-center">
             <thead>
                 <tr>
-                    <th>Naziv proizvoda</th>
-                    <th>Šifra</th>
+                    <th id="naziv" value="desc">Naziv proizvoda</th>
+                    <th id="sifra" value="desc">Šifra</th>
                     <th>Opis</th>
-                    <th>Cena - RSD</th>
+                    <th id="cena" value="desc">Cena - RSD</th>
                     <th>Merna jedinica</th>
-                    <th>Količina</th>
+                    <th id="kolicina" value="desc">Količina</th>
                     <th></th>
                 </tr>
             </thead>
