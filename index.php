@@ -12,17 +12,24 @@
 
 <body>
 
+    <?php
+    include('Modal.php');
+    ?>
+
     <div class="div-index">
 
-        <h1 class="index-naslov">PHP MYQL AJAX - Domaći zadatak</h1>
+        <h1 class="index-naslov">PHP MYSQL AJAX - Domaći zadatak</h1>
 
         <div class="div-index-izbor">
-            <button class="btn btn-primary btn-lg" id="novi-proizvod-dgm">Unesi novi proizvod</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#novi-proizvod-modal" id="novi-proizvod-dgm">Unesi novi proizvod</button>
             <button class="btn btn-success btn-lg" id="azuriraj-zalihe-dgm">Ažuriraj zalihe</button>
         </div>
 
 
 
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </div>
 
 </body>
