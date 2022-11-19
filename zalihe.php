@@ -23,6 +23,7 @@
 
         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#nova-zaliha-modal" id="nova-zaliha-dgm">Unesi nove zalihe</button>
 
+        <input type="text" class="form-control" id="search-zalihe">
 
 
         <table id="table-zalihe" class="table table-hover table-striped text-center">
@@ -61,33 +62,6 @@
                 <?php } ?>
             </tbody>
         </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>

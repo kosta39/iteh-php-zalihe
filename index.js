@@ -3,6 +3,7 @@ $(function () {
     unosZalihe();
     obrisiZalihe();
     sortirajZalihe();
+    pretragaZaliha();
 });
 
 function unosProizvoda() {
@@ -120,4 +121,26 @@ function sortirajZalihe() {
     })
 
 
+}
+
+function pretragaZaliha() {
+
+    $(document).on('keyup', '#search-zalihe', function () {
+
+        let naziv = $(this).val()
+
+        $.ajax(
+            {
+                url: 'DB/search-zalihe.php',
+                method: 'POST',
+                data: {
+                    naziv: naziv
+                },
+
+                success: function (zalihe) {
+                    $('tbody').html(zalihe)
+                }
+            });
+
+    })
 }
